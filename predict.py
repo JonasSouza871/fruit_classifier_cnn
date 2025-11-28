@@ -4,8 +4,8 @@ from PIL import Image
 import json
 
 #Caminho do modelo e labels
-model_path = "modelo_fruits_compat.tflite"
-labels_path = 'labels_traduzidas.json'
+model_path = "trained_model/modelo_fruits_compat.tflite"
+labels_path = 'trained_model/labels_traduzidas.json'
 
 #Carregar labels
 with open(labels_path, 'r') as f:
@@ -20,7 +20,7 @@ input_details = interpreter.get_input_details() #abir modelo tflite
 output_details = interpreter.get_output_details()
 
 #imagem que voce predente analisar
-image_path = 'banana.png'
+image_path = 'images/maca.png'
 #processamento imagem
 img = Image.open(image_path).convert('RGB')
 img = img.resize((100, 100))  # ajuste conforme o tamanho do modelo
