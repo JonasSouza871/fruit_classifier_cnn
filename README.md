@@ -13,6 +13,10 @@ Este projeto implementa um classificador de imagens de frutas utilizando Redes N
 
 O projeto utiliza Docker para simular um ambiente Linux ARM (arquitetura ARM v7), permitindo testar o modelo em condicoes similares a dispositivos embarcados como Raspberry Pi, sistemas IoT e outros dispositivos ARM.
 
+O modelo foi treinado utilizando o dataset Fruits-360, disponível no Kaggle. Esse conjunto de dados contém milhares de imagens de alta qualidade de diversas frutas, capturadas sob diferentes ângulos e condições controladas, o que o torna ideal para tarefas de classificação de imagens.
+[https://www.kaggle.com/datasets/moltean/fruits](https://www.kaggle.com/datasets/moltean/fruits)
+
+
 ## Estrutura do Projeto
 
 ```
